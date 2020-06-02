@@ -21,4 +21,11 @@ class TController extends Controller
     return response()->json(Twitter::get());
 }
 
+
+public function delete($id){
+    return response()->json(Twitter::destroy($id));
+
+}
+
+
 }

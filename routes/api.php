@@ -11,3 +11,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('/twitter','TController@create');
 Route::get('/id','TController@get');
+Route::delete('/delete/{id}','TController@delete');
